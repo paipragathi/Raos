@@ -1,0 +1,15 @@
+<!-- main/templates/main/resource_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resource List</title>
+</head>
+<body>
+    <h2>Resource List</h2>
+    <ul>
+        {% for resource in resources %}
+            <li>{{ resource.name }} - {{ resource.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
